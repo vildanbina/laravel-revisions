@@ -1,0 +1,59 @@
+{
+    "name": "vildanbina/laravel-revisions",
+    "description": "Create multiple revisions of any Eloquent model record along with its underlying relationships",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "revisions",
+        "eloquent",
+        "model",
+        "relations",
+        "changes",
+        "copy"
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Vildan Bina",
+            "email": "vildanbina@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5|^8.0|^8.1",
+        "illuminate/contracts": "^7.0|^8.0",
+        "illuminate/support": "^7.0|^8.0",
+        "illuminate/database": "^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "vildanbina\\Revisions\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "vildanbina\\Revisions\\Tests\\": "tests"
+        },
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "vildanbina\\Revisions\\ServiceProvider"
+            ]
+        }
+    }
+}
